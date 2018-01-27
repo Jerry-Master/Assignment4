@@ -1,0 +1,57 @@
+---
+title: "Main functions"
+author: "Jose Pérez Cano"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## fars_map_state
+
+This is the main function of this package, it plots each accident of some year into a map of the state you choose. To call it just write `fars_map_state(state.num, year)` where the number of a state can be searched in  [Wikipedia](https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations)
+
+## Some maps
+
+For instance, this would be the representation of the accidents in 2014 in the state of Florida
+
+```{r echo=FALSE, fig.show='hold', fig.align='center'}
+source("fars_functions.R")
+fars_map_state(12, 2014)
+```
+And this of Texas in 2013 
+
+```{r echo=FALSE, fig.align='center'}
+source("fars_functions.R")
+fars_map_state(48,2013)
+```
+
+##fars_summarize_years
+
+This function is another way of visualizing the accidents, instead of plotting into a map it tells you how many there are per year and month. It just need a vector with the years.
+
+##Examples
+
+This will the summary of the years 2013 to 2015
+
+```{r echo=FALSE}
+source("fars_functions.R")
+library(magrittr)
+fars_summarize_years(2013:2015)
+```
+
+
+##Other functions
+
+The other functions of the package such as `fars_read` or `make_filename` are just useful functions to the two above, they aren't the purpose of this package but you can use if you want to access the data and modify it yourself. 
+
+
