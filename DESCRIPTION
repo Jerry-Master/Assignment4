@@ -1,12 +1,11 @@
 Package: Assignment4
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Fars_Map
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Jose
+Maintainer: joseperez2000@hotmail.es
+Description: It is a useful tool to visualize the accidents in the USA in the last few years.
+License: CC0
 Encoding: UTF-8
 LazyData: true
 Suggests: knitr,
