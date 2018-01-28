@@ -41,7 +41,7 @@ fars_read <- function(filename) {
 #'@export
 make_filename <- function(year) {
         year <- as.integer(year)
-        sprintf("./vignettes/accident_%d.csv.bz2", year)
+        sprintf("./data/accident_%d.csv.bz2", year)
 }
 
 #'Read data of a given year
