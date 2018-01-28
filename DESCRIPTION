@@ -8,6 +8,10 @@ Description: It is a useful tool to visualize the accidents in the USA
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
+Imports: dplyr, 
+    maps,
+    readr,
+    tidyr
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
