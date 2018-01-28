@@ -3,16 +3,16 @@ Type: Package
 Title: Map Accidents
 Version: 0.1.0
 Author: Jose
+Maintainer: Jose <joseperez2000@hotmail.es>
 Description: It is a useful tool to visualize the accidents in the USA 
     in the last few years.
 License: GPL-2
 Encoding: UTF-8
-LazyData: true
-Imports: dplyr, 
-    maps,
-    readr,
-    tidyr
-Suggests: knitr,
-    rmarkdown
-VignetteBuilder: knitr
+LazyData: FALSE
 RoxygenNote: 6.0.1
+Imports:
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+
